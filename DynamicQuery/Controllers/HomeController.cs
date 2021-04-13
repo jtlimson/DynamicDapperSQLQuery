@@ -20,7 +20,7 @@ namespace DynamicQuery.Controllers
         private readonly ILogger<HomeController> _logger;                
         RMS_DBContext db = new RMS_DBContext();
         
-        private string[] RESTRICTED_DML_STATEMENTS = { "UPDATE", "DELETE", "INSERT" };
+        private string[] RESTRICTED_DML_STATEMENTS = { "UPDATE", "DELETE", "INSERT" , "MERGE", "DROP", "DESCRIBE" };
         private SQLParser SQLParser = new SQLParser();
 
 
